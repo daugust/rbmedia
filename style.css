@@ -22,8 +22,8 @@ svg{
     padding: 5px;
 }
 nav a:hover{
-    background-color:#ddd;
-    color:#000;
+    background-color:#000;
+    color:#ddd;
 }
 
 .side-nav{
@@ -108,11 +108,13 @@ nav a:hover{
     background-size: cover;
     background-position: top left;
     transition: all ease-in-out 300ms;
+    color: #D3D3D3;
     text-align: center;
     height: 400px;
     margin: 0;
     padding: 2em;
     position: relative;
+    z-index: 1;
 }
 
 .portfolio::before{
@@ -126,13 +128,16 @@ nav a:hover{
     bottom: 0;
     left: 0;
     transition: all ease-in-out 300ms;
+    z-index: -1;
 }
 
 .portfolio:hover::before {
     opacity: 0.2;
   }
 
-
+.portfolio h2{
+    padding-top: 3.5em;
+}
 
 .contact{
     text-align: center;
@@ -140,6 +145,13 @@ nav a:hover{
 
 #contactForm label{
     display:  block;
+}
+
+#contactForm input, textarea{
+    width: 60vw;
+    margin: 8px 0;
+    padding: 12px 20px;
+
 }
 
 footer{
@@ -152,3 +164,4 @@ footer{
 
 
 
+/*Media Queries*/
